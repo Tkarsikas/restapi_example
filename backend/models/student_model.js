@@ -19,8 +19,8 @@ const student={
         });
     },
     delete:function(username, callback){
-        return db.query("DELETE FROM student WHERE username=?"[username],callback);
-    },
+        return db.query("DELETE FROM student WHERE username=?", [username],callback);
+    }
 };
 
 module.exports=student;
