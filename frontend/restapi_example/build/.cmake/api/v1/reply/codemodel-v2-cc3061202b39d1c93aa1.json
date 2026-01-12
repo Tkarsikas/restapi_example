@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-4d513adaa1e685940300.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "restapi_example",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "restapi_example::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-restapi_example-Debug-2f4682a9ea3eb7353e39.json",
+					"name" : "restapi_example",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "restapi_example_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-restapi_example_autogen-Debug-69c514614a5da824961e.json",
+					"name" : "restapi_example_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "restapi_example_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-restapi_example_autogen_timestamp_deps-Debug-d373efcf7ceac1229155.json",
+					"name" : "restapi_example_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kev\u00e4t/restapi_example/frontend/restapi_example/build",
+		"source" : "C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kev\u00e4t/restapi_example/restapi_example"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

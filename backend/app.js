@@ -17,11 +17,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-
+app.use('/login', loginRouter);
 //suojatut reitit
 app.use(authenticateToken);
 app.use('/student', studentRouter);
-app.use('/login', loginRouter);
+
 
 function authenticateToken(req, res, next) {
     const authHeader = req.headers['authorization'];

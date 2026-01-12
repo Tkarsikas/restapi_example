@@ -1,0 +1,9 @@
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/restapi_example.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/edit_cache.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/rebuild_cache.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/list_install_components.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/install.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/install/local.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/install/strip.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/restapi_example_autogen_timestamp_deps.dir
+C:/Users/tommi/OneDrive - University of Oulu and Oamk/Opiskelut 2025/2026 kevät/restapi_example/frontend/restapi_example/build/CMakeFiles/restapi_example_autogen.dir
