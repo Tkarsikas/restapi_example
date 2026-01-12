@@ -32,5 +32,18 @@ void MainWindow::btnLoginSlot()
 void MainWindow::loginAction()
 {
     QByteArray responseData=reply->readAll();
-    qDebug()<<responseData;
+    if(responseData=="-4078" || responseData.length()==0){
+        ui->textInfo->setText("Virhe tietoverkkoyhteydessä");
+    }
+    else{
+        QJsonDocument jsonDoc=QJsonDocument::fromJson(responseData);
+        QJsonObject jsonObject=jsonDoc.object();
+        if(jsonObject.contains("token")){
+            QString token=jsonObject["token"].toString();
+            qDebug()<<token;
+        }
+        else{
+            ui->textInfo->setText("Tunnus ja salasana eivät täsmää");
+        }
+    }
 }
