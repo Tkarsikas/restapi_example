@@ -1,5 +1,6 @@
 backend/node_modules/
-bank-automat/build/
-bank-automat/*.user
+frontend/build/
+frontend/*.user
 .qtcreator/
 backend/.env
+frontend/restapi_example/
