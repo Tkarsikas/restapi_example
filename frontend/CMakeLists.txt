@@ -13,6 +13,8 @@ qt_add_executable(frontend
     mainwindow.ui
     environment.h environment.cpp
     environment.h environment.cpp
+    studentinfo.h studentinfo.cpp studentinfo.ui
+    mydata.h mydata.cpp mydata.ui
 )
 
 target_link_libraries(frontend
