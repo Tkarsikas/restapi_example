@@ -37,6 +37,8 @@ private:
 private slots:
     void fetchDataSlot();
     void myDataSlot();
+    void myGradesSlot();
+    void btnMyGradeClicked();
 };
 
 #endif // STUDENTINFO_H
