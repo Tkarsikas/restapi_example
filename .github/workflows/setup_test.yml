@@ -73,8 +73,8 @@ jobs:
           - Automaattisesti luotu release release-branchista
 
           ---
-        Luotu automaattisesti GitHub Actionsilla
-        files: |
+        Luotu automaattisesti GitHub Actionsilla:
+        fles: |
           output/frontend_exampleSetup.exe
         draft: false
         prerelease: false
