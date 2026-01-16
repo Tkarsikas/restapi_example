@@ -41,7 +41,8 @@ router.put('/:username', function(request,response){
             response.send(err);
         }
         else{
-            response.json(result[0]);
+            console.log(result);
+            response.json(result.affectedRows);
         }
     })
 });
