@@ -65,6 +65,10 @@ void StudentInfo::btnMyGradeClicked()
 void StudentInfo::myGradesSlot()
 {
     QByteArray response=reply->readAll();
-    qDebug()<<response;
+    MyGrades *objMyGrades = new MyGrades(this);
+    objMyGrades->setMyGrades(response);
+    objMyGrades->show();
+
+    reply->deleteLater();
 }
 

@@ -15,8 +15,11 @@ public:
     explicit MyGrades(QWidget *parent = nullptr);
     ~MyGrades();
 
+    void setMyGrades(const QByteArray &newMyGrades);
+
 private:
     Ui::MyGrades *ui;
+    QByteArray myGrades;
 };
 
 #endif // MYGRADES_H

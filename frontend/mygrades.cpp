@@ -12,3 +12,10 @@ MyGrades::~MyGrades()
 {
     delete ui;
 }
+
+void MyGrades::setMyGrades(const QByteArray &newMyGrades)
+{
+    myGrades = newMyGrades;
+    qDebug()<<"MyGrades Form";
+    qDebug()<<myGrades;
+}

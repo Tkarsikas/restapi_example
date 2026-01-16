@@ -10,6 +10,7 @@
 #include <QJsonArray>
 #include "environment.h"
 #include "mydata.h"
+#include "mygrades.h"
 
 
 namespace Ui {
