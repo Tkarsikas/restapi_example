@@ -10,6 +10,7 @@
 #include <QJsonArray>
 #include "environment.h"
 #include "mydata.h"
+#include "mygrades.h"
 
 
 namespace Ui {
@@ -37,6 +38,8 @@ private:
 private slots:
     void fetchDataSlot();
     void myDataSlot();
+    void myGradesSlot();
+    void btnMyGradeClicked();
 };
 
 #endif // STUDENTINFO_H
