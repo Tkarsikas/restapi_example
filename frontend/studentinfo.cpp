@@ -46,6 +46,8 @@ void StudentInfo::myDataSlot()
     qDebug()<<response;
     MyData *objMyData=new MyData(this);
     objMyData->setTestData(response);
+    objMyData->setUsername(username);
+    objMyData->setToken(token);
     objMyData->show();
 
     reply->deleteLater();
