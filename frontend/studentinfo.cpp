@@ -9,6 +9,7 @@ StudentInfo::StudentInfo(QWidget *parent)
     ui->setupUi(this);
     manager=new QNetworkAccessManager(this);
     connect(ui->btnMyData, &QPushButton::clicked, this, &StudentInfo::fetchDataSlot);
+    connect(ui->btnMyGrades, &QPushButton::clicked, this, &StudentInfo::btnMyGradeClicked);
 }
 
 StudentInfo::~StudentInfo()
@@ -45,7 +46,32 @@ void StudentInfo::myDataSlot()
     qDebug()<<response;
     MyData *objMyData=new MyData(this);
     objMyData->setTestData(response);
+    objMyData->setUsername(username);
+    objMyData->setToken(token);
     objMyData->show();
 
     reply->deleteLater();
 }
+
+void StudentInfo::btnMyGradeClicked()
+{
+    QString url=Environment::base_url()+"grade/"+username;
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    QByteArray myToken="Bearer "+token;
+    request.setRawHeader(QByteArray("Authorization"),(myToken));
+    reply=manager->get(request);
+    connect(reply, &QNetworkReply::finished, this, &StudentInfo::myGradesSlot);
+}
+
+void StudentInfo::myGradesSlot()
+{
+    QByteArray response=reply->readAll();
+    qDebug()<<response;
+    MyGrades *objMyGrades = new MyGrades(this);
+    objMyGrades->setMyGrades(response);
+    objMyGrades->show();
+
+    reply->deleteLater();
+}
+
